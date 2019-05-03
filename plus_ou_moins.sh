@@ -6,11 +6,9 @@ count=0
 usr=0
 
 # Boucle
-while [ "${random}" -ne "${usr}" ]
-do
+while [ "${random}" -ne "${usr}" ]; do
 echo "Choisissez un Nombre"
-# Choix de l'Usr
-	read usr
+read usr
 # Comparaison
 	if [ "${usr}" -eq "${usr}" ]
 	then
@@ -31,7 +29,7 @@ echo "Choisissez un Nombre"
 		fi
 # Error
 	else
-		echo -e "Ce n'est pas un nombre ! Veuillez en rentrer un exact\n"
+		echo -e -n "Ce n'est pas un nombre ! Veuillez en rentrer un exact\n"
 		usr=0
 	fi
 done
